@@ -24,7 +24,7 @@ export const siteConfig: Site.Config = {
     name: 'Solomon Foskaay',
     status: '🚀',
     statusTip:
-      '<a href="https://github.com/SolomonFoskaay" rel="external" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" target="_blank" rel="noreferrer">SolomonFoskaay</a> is an Ai/Web3 Dev Instructor, Technical Content Writer and Founder AiHiPUniversity!',
+      '<a href="https://github.com/SolomonFoskaay" rel="external" style="color:#0F0" onMouseOver="this.style.color=\'#0FF\'" onMouseOut="this.style.color=\'#0F0\'" target="_blank" rel="noreferrer">SolomonFoskaay</a> is an Entrepreneur, Ai/Web3 Dev Instructor, Technical Content Writer and Founder AiHiPUniversity!',
     avatar: Avatar,
     avatar_128: Avatar_128,
     avatar_48_png: Avatar_48_PNG,
@@ -94,17 +94,28 @@ export const dateConfig: Site.DateConfig = {
 export const giscusConfig: Giscus.Config = {
   enable: true,
   id: 'giscus-comment',
-  repo: import.meta.env.QWER_GISCUS_REPO,
-  repoId: import.meta.env.QWER_GISCUS_REPO_ID,
-  category: import.meta.env.QWER_GISCUS_CATEGORY,
-  categoryId: import.meta.env.QWER_GISCUS_CATEGORY_ID,
+  repo: import.meta.env.AiHiUniversity_GISCUS_REPO,
+  repoId: import.meta.env.AiHiUniversity_GISCUS_REPO_ID,
+  category: import.meta.env.AiHiUniversity_GISCUS_CATEGORY,
+  categoryId: import.meta.env.AiHiUniversity_GISCUS_CATEGORY_ID,
   mapping: 'pathname',
   reactionsEnabled: '1',
   emitMetadata: '0',
   inputPosition: 'top',
   loading: 'lazy',
   lang: 'en',
-  'data-strict': '0',
+  'data-strict': '1',
+  /// repo: import.meta.env.QWER_GISCUS_REPO,
+  // repoId: import.meta.env.QWER_GISCUS_REPO_ID,
+  // category: import.meta.env.QWER_GISCUS_CATEGORY,
+  // categoryId: import.meta.env.QWER_GISCUS_CATEGORY_ID,
+  // mapping: 'pathname',
+  // reactionsEnabled: '1',
+  // emitMetadata: '0',
+  // inputPosition: 'top',
+  // loading: 'lazy',
+  // lang: 'en',
+  // 'data-strict': '0',
 };
 
 export const navConfig: (DD.Nav | DD.Link)[] = [
@@ -113,15 +124,31 @@ export const navConfig: (DD.Nav | DD.Link)[] = [
     url: '/about',
   },
   {
-    name: 'See Docs 📄',
-    url: 'https://docs-svelte-qwer.vercel.app/',
-    rel: 'external',
+    name: 'Contact',
+    url: '/contact',
   },
   {
-    name: 'Get QWER 🚀',
-    url: 'https://github.com/kwchang0831/svelte-QWER',
-    rel: 'external',
+    name: 'Courses',
+    url: '/?tags=Courses',
   },
+  {
+    name: 'AI Dev Support',
+    url: '/support',
+  },
+  {
+    name: 'Articles',
+    url: '/?tags=Articles',
+  },
+  // {
+  //   name: 'See Docs 📄',
+  //   url: 'https://docs-svelte-qwer.vercel.app/',
+  //   rel: 'external',
+  // },
+  // {
+  //   name: 'Get QWER 🚀',
+  //   url: 'https://github.com/kwchang0831/svelte-QWER',
+  //   rel: 'external',
+  // },
 ];
 
 export const mobilenavConfig: DD.Nav = {
@@ -132,14 +159,20 @@ export const mobilenavConfig: DD.Nav = {
       url: '/about',
     },
     {
-      name: 'See Docs 📄',
-      url: 'https://docs-svelte-qwer.vercel.app/',
-      rel: 'external',
+      name: 'Contact',
+      url: '/contact',
     },
     {
-      name: 'Get QWER 🚀',
-      url: 'https://github.com/kwchang0831/svelte-QWER',
-      rel: 'external',
+      name: 'Courses',
+      url: '/?tags=Courses',
+    },
+    {
+      name: 'AI Dev Support',
+      url: '/support',
+    },
+    {
+      name: 'Articles',
+      url: '/?tags=Articles',
     },
   ],
 };

@@ -11,8 +11,6 @@
 
 <Post>
   <article slot="post_content">
-    <p>Welcome To AiHiPUniversity</p>
-    <p>We aim to enhance developers with AI to make them more productive.</p>
-    <p>Artificial Intelligence + Human Intelligence + Programming = AiHiPUniversity</p>
+    <p>For Enquiry, Partnership or Grant. Kindly reach us via:</p>
   </article>
 </Post>
