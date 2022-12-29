@@ -11,6 +11,6 @@
 
 <Post>
   <article slot="post_content">
-    <p>For Enquiry, Partnership or Grant. Kindly reach us via:</p>
+    <p>For Enquiry, Partnership or Grant. Kindly reach us via: .</p>
   </article>
 </Post>
